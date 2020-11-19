@@ -1,0 +1,102 @@
+body {
+    background-color: #eff1f6;
+    color: #808080;
+    height: 100vh;
+}
+
+#app {
+    margin: 0;
+    padding: 100px;
+}
+
+.carousel-wrapper {
+    width: 500px;
+    margin: 150px;
+    position: relative;
+    padding: 0 40px;
+}
+
+.carousel-inner-wrapper{
+    overflow: hidden;
+}
+
+.carousel {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    transition: all 1s;
+}
+
+.single-block {
+    margin: 10px;
+    width: 100%;
+    min-width: 70px;
+    display: inline-table;
+    height: auto;
+    min-height: 200px;
+    box-sizing: content-box;
+    box-shadow: 0 1px 4px rgba(188, 214, 212, 0.83);
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 3px;
+}
+
+.navigation{
+    top: 50%;
+    margin-top: -10px;
+    position: absolute;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    color: #808080;
+}
+
+.navigation-prev{
+    float: left;
+    left: 0;
+
+}
+
+.navigation-next{
+    float: right;
+    right: 0;
+}
+
+.bullets-wrapper{
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    left: 0;
+}
+
+.bullets-wrapper li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    color: #808080;
+}
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #808080;
+    border-radius: 50%;
+    display: inline-block;
+    pointer-events: none
+}
